@@ -39,3 +39,6 @@ public class BubbleSort {
 // After performing sorting, if the original order is maintained for the values
 // that were equal, then the algorithm is termed as stable
 // Bubble sort algorithm is also a stable algorithm
+
+// Complexity : Worst case : O(n square)
+// Best case : O(n square)

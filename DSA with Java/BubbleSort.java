@@ -41,4 +41,4 @@ public class BubbleSort {
 // Bubble sort algorithm is also a stable algorithm
 
 // Complexity : Worst case : O(n square)
-// Best case : O(n square)
+// Best case : O(n)

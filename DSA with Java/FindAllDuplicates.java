@@ -3,7 +3,7 @@
 import java.util.List;
 import java.util.ArrayList;
 
-class Solution {
+class FindAllDuplicates {
     public List<Integer> findDuplicates(int[] nums) {
         cycleSort(nums);
 

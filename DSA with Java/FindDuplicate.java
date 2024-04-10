@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/find-the-duplicate-number/description/
 
-class Solution {
+class FindDuplicate {
     public int findDuplicate(int[] nums) {
             int i = 0;
             while (i < nums.length) {

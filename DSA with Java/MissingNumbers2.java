@@ -1,7 +1,7 @@
 
 import java.util.List;
 import java.util.ArrayList;
-class Solution {
+class MissingNumberAnother {
     public List<Integer> findDisappearedNumbers(int[] nums) {
         int i = 0;
         while (i < nums.length) {

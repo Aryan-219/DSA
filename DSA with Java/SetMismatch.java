@@ -1,6 +1,6 @@
 // https://leetcode.com/problems/set-mismatch/description/
 
-class Solution {
+class SetMismatch {
     public int[] findErrorNums(int[] nums) {
         cycleSort(nums);
         int[] result = new int[2];

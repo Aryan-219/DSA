@@ -3,24 +3,23 @@ package Arrays;
 import java.util.ArrayList;
 
 public class SearchInArray {
-    static ArrayList<Integer> list = new ArrayList<>();
-
+    
     public static void main(String[] args) {
         int[] arr = { 23, 4, 34, 5, 2312, 4, 34234 };
         // System.out.println(searchInArray(arr, 1));
         // findAllIndices2(arr, 4, 0,list);
-
+        
         
         System.out.println(findAllIndices3(arr, 4, 0));
         // System.out.println(list);
-
+        
     }
-
+    
     // -----------------------------------------------
     static int searchInArray(int[] arr, int x) {
         return helper(arr, x, 0);
     }
-
+    
     static int helper(int[] arr, int x, int index) {
         if (index == arr.length) {
             return -1;
@@ -32,8 +31,9 @@ public class SearchInArray {
         }
     }
     // -----------------------------------------------
-
-    static void findAllIndices(int[] arr, int x, int index) {
+    
+    static ArrayList<Integer> list = new ArrayList<>();
+    static void findAllIndices1(int[] arr, int x, int index) {
         if (index == arr.length) {
             return;
         }
@@ -41,7 +41,7 @@ public class SearchInArray {
             list.add(index);
 
         }
-        findAllIndices(arr, x, index + 1);
+        findAllIndices1(arr, x, index + 1);
     }
     static ArrayList<Integer> findAllIndices2(int[] arr, int x, int index, ArrayList<Integer> list) {
         if (index == arr.length) {

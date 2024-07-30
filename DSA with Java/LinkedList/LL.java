@@ -1,6 +1,7 @@
 package LinkedList;
 
 public class LL {
+
     private Node head;
     private Node tail;
     private int size;
@@ -125,5 +126,33 @@ public class LL {
         prev.next = prev.next.next;
         size--;
         return value;
+    }
+
+    public void insertRec(int value, int index) {
+        head = insertRec(value, index, head);
+    }
+
+    private Node insertRec(int value, int index, Node node) {
+
+        if (index == 0) {
+            Node n = new Node(value, node);
+            size++;
+            return n;
+        }
+
+        node.next = insertRec(value, --index, node.next);
+        return node;
+    }
+
+    // recursion reverse
+    private void reverse(Node node){
+        if(node == tail){
+            head = tail;
+            return;
+        }
+        reverse(node.next);
+        tail.next = node;
+        tail = node;
+        tail.next = null;
     }
 }

@@ -10,11 +10,16 @@ public class Main {
         list.insertLast(99);
         list.insert(100, 3);
         list.display();
-        System.out.println(list.deleteFirst());
+        // System.out.println(list.deleteFirst());
+        // list.display();
+        // System.out.println(list.deleteLast());
+        // list.display();
+        // System.out.println(list.delete(2));
+
+        list.insertRec(88, 0);
         list.display();
-        System.out.println(list.deleteLast());
-        list.display();
-        System.out.println(list.delete(2));
-        list.display();
+
+        RemoveDuplicate l = new RemoveDuplicate();
+        
     }
 }

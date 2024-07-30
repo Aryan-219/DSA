@@ -1,4 +1,4 @@
-package com.kunal;
+package LinkedList;
 
 public class CLL {
 

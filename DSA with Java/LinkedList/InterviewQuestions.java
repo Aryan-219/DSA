@@ -1,3 +1,5 @@
+package LinkedList;
+
 public class InterviewQuestions {
 
     // https://leetcode.com/problems/linked-list-cycle
@@ -90,16 +92,16 @@ public class InterviewQuestions {
         }
         return false;
     }
+
     private int findSquare(int number) {
         int ans = 0;
         while (number > 0) {
-            int rem = number % 10 ;
+            int rem = number % 10;
             ans += rem * rem;
             number /= 10;
         }
         return ans;
     }
-
 
     // https://leetcode.com/problems/middle-of-the-linked-list/submissions/
     public ListNode middleNode(ListNode head) {
@@ -112,8 +114,6 @@ public class InterviewQuestions {
         }
         return s;
     }
-
-
 
     // https://leetcode.com/problems/reverse-linked-list/submissions/
     // google, apple, amazon, microsoft
@@ -136,7 +136,8 @@ public class InterviewQuestions {
         return prev;
     }
 
-    // Google, Microsoft, Facebook: https://leetcode.com/problems/reverse-linked-list-ii/
+    // Google, Microsoft, Facebook:
+    // https://leetcode.com/problems/reverse-linked-list-ii/
     public ListNode reverseBetween(ListNode head, int left, int right) {
         if (left == right) {
             return head;
@@ -174,8 +175,8 @@ public class InterviewQuestions {
         return head;
     }
 
-
-    // google, amazon, facebook, microsoft: https://leetcode.com/problems/reverse-nodes-in-k-group/
+    // google, amazon, facebook, microsoft:
+    // https://leetcode.com/problems/reverse-nodes-in-k-group/
     public ListNode reverseKGroup(ListNode head, int k) {
         if (k <= 1 || head == null) {
             return head;
@@ -184,8 +185,8 @@ public class InterviewQuestions {
         ListNode current = head;
         ListNode prev = null;
 
-		int length = getLength(head);
-		int count = length / k;
+        int length = getLength(head);
+        int count = length / k;
         while (count > 0) {
             ListNode last = prev;
             ListNode newEnd = current;
@@ -209,20 +210,20 @@ public class InterviewQuestions {
             newEnd.next = current;
 
             prev = newEnd;
-			count--;
+            count--;
         }
         return head;
     }
 
-	public int getLength(ListNode head) {
-		ListNode node = head;
-		int length = 0;
-		while (node != null) {
-			length++;
-			node = node.next;
-		}
-		return length;
-	}
+    public int getLength(ListNode head) {
+        ListNode node = head;
+        int length = 0;
+        while (node != null) {
+            length++;
+            node = node.next;
+        }
+        return length;
+    }
 
     // https://www.geeksforgeeks.org/reverse-alternate-k-nodes-in-a-singly-linked-list/
     public ListNode reverseAlternateKGroup(ListNode head, int k) {
@@ -266,9 +267,8 @@ public class InterviewQuestions {
         return head;
     }
 
-
     // linkedin, google, facebook, microsoft, amazon, apple
-//    https://leetcode.com/problems/palindrome-linked-list/
+    // https://leetcode.com/problems/palindrome-linked-list/
     public boolean isPalindrome(ListNode head) {
         ListNode mid = middleNode(head);
         ListNode headSecond = reverseList(mid);
@@ -288,7 +288,7 @@ public class InterviewQuestions {
     }
 
     // https://leetcode.com/problems/reorder-list/
-// Google, Facebook
+    // Google, Facebook
     public void reorderList(ListNode head) {
         if (head == null || head.next == null) {
             return;
@@ -343,9 +343,6 @@ public class InterviewQuestions {
     }
 
 }
-
-
-
 
 class ListNode {
     int val;

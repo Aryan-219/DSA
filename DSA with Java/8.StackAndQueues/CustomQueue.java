@@ -1,4 +1,3 @@
-package com.kunal;
 
 public class CustomQueue {
     private int[] data;

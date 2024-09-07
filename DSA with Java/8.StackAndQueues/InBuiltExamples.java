@@ -1,7 +1,7 @@
-import java.util.ArrayDeque;
-import java.util.Deque;
-import java.util.LinkedList;
-import java.util.Queue;
+// import java.util.ArrayDeque;
+// import java.util.Deque;
+// import java.util.LinkedList;
+// import java.util.Queue;
 // import java.util.Stack;
 
 public class InBuiltExamples {
@@ -41,16 +41,16 @@ public class InBuiltExamples {
         // System.out.println(queue.peek());
         // System.out.println(queue.remove());
 
-        Deque deck = new LinkedList<>();
-        deck.add(1);
-        deck.add(2);
-        deck.add(3);
-        deck.addFirst(45);
-        deck.addFirst(46);
-        deck.addFirst(47);
-        deck.addLast(67);
-        deck.addLast(68);
-        deck.addLast(69);
+        // Deque deck = new LinkedList<>();
+        // deck.add(1);
+        // deck.add(2);
+        // deck.add(3);
+        // deck.addFirst(45);
+        // deck.addFirst(46);
+        // deck.addFirst(47);
+        // deck.addLast(67);
+        // deck.addLast(68);
+        // deck.addLast(69);
 
         // O/P : 47,46,45,1,2,3,67,68,69
         // System.out.println(deck.poll());
@@ -73,11 +73,11 @@ public class InBuiltExamples {
         // System.out.println(deck.poll());
         // System.out.println(deck.poll());
 
-        System.out.println(deck.peek());
-        System.out.println(deck.peekFirst());
-        System.out.println(deck.peekLast());
+        // System.out.println(deck.peek());
+        // System.out.println(deck.peekFirst());
+        // System.out.println(deck.peekLast());
 
-        Deque deque = new ArrayDeque<>();
-        System.out.println(deque.size());
+        // Deque deque = new ArrayDeque<>();
+        // System.out.println(deque.size());
     }
 }

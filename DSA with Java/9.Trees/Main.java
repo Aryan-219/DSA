@@ -8,11 +8,21 @@ public class Main {
     // tree.display();
     // tree.prettyDisplay();
 
-    BinarySearchTree bst = new BinarySearchTree();
+    // BinarySearchTree bst = new BinarySearchTree();
     // int[] nums = { 5, 2, 7, 1, 4, 6, 9, 8, 3, 10 };
-    int[] nums = { 1,2,3,4,5,6,7,8,9,10};
-    bst.populateSorted(nums);
+    // int[] nums = { 1,2,3,4,5,6,7,8,9,10};
+    // bst.populateSorted(nums);
     // bst.populate(nums);
-    bst.display();
+    // bst.display();
+    
+    
+    AVL tree = new AVL();
+    // int[] nums = { 1,2,3,4,5,6,7,8,9,10};
+    // tree.populateSorted(nums);
+    for(int i=0; i<1000; i++){
+      tree.insert(i);
+    }
+
+    System.out.println(tree.height());
   }
 }

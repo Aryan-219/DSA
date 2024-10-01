@@ -4,6 +4,6 @@ class Main {
     SegmentTree tree = new SegmentTree(arr);
     // tree.display();
 
-    System.out.println(tree.query(1, 6));
+    System.out.println(tree.query(2, 6));
   }
 }

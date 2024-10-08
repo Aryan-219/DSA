@@ -1,23 +1,14 @@
 import java.util.Scanner;
 
 public class BinaryTree {
+    
     private static class TreeNode {
         int value;
         TreeNode left;
         TreeNode right;
 
-        TreeNode(int value, TreeNode left, TreeNode right) {
-            this.value = value;
-            this.left = left;
-            this.right = right;
-        }
-
         TreeNode(int value) {
             this.value = value;
-        }
-
-        TreeNode() {
-
         }
     }
 
@@ -28,6 +19,7 @@ public class BinaryTree {
         int value = scanner.nextInt();
         root = new TreeNode(value);
         populate(scanner, root);
+        
     }
 
     private void populate(Scanner scanner, TreeNode node) {
@@ -95,12 +87,12 @@ public class BinaryTree {
         preOrder(node.left);
         preOrder(node.right);
     }
-    
+
     // In-order traversal
     public void inOrder() {
         inOrder(root);
     }
-    
+
     private void inOrder(TreeNode node) {
         if (node == null) {
             return;
@@ -109,7 +101,7 @@ public class BinaryTree {
         System.out.println(node.value + " ");
         inOrder(node.right);
     }
-    
+
     // Post-order traversal
     public void postOrder() {
         postOrder(root);
